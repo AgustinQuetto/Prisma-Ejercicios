@@ -1,0 +1,103 @@
+body {
+  font-family: 'Kanit', sans-serif;
+}
+.container {
+  width: 680px;
+  height: 385px;
+  padding-bottom: 15px;
+  background-color: #8bc34a;
+    header {
+      padding-top: 10px;
+      width: 100%;
+      height: 90px;
+      background: #58585a;
+      text-align: center;
+      h1 {
+        color: #90c81b;
+      }
+    }
+    .container-boxes {
+      width: 90%;
+      padding: 2% 5% 2% 5%;
+      display: flex;
+      flex-direction: row;
+    }
+    .container-box {
+      min-width: 33%;
+      max-width: 33%;
+      display: flex;
+      flex-direction: row;
+      table {
+        border: none;
+        text-align: center;
+        vertical-align: -webkit-baseline-middle;
+        tr {
+          th {
+            min-width: 33.3%;
+            color: #58585a;
+            font-size: 0.8em;
+            font-weight: bold;
+            padding: 0px 5px 0px 5px;
+          }
+          td {
+            min-width: 33.3%;
+            color: white;
+            font-size: 1.4em;
+          }
+        }
+      }
+      .input-container {
+        text-align: center;
+        min-width: 100%;
+        max-height: 10%;
+        font-size: 0.8em;
+        color: #58585a;
+        font-size: 0.8em;
+        margin-top: 9%;
+        flex-flow: column;
+        flex-wrap: wrap;
+      }
+      input {
+        margin-top: 3px;
+        text-align: center;
+        vertical-align: -webkit-baseline-middle;
+        outline: 0;
+        padding:10px 40px; 
+        background:white;
+        max-width:125px;
+        max-height:25px;
+        border-radius:25px;
+        outline: 0;
+        border: none;
+        font-size: 2em;
+        color: #90c81b;
+        flex-wrap: wrap;
+        margin-left: 0px;
+        -webkit-box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.25);
+        -moz-box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.25);
+        box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.25);
+      }
+  }
+  button {
+    text-align: center;
+    vertical-align: -webkit-baseline-middle;
+    outline: 0;
+    padding: 8px 20px; 
+    background: transparent;
+    min-width: 45%;
+    max-height: 50px;
+    border-radius: 25px;
+    outline: 0;
+    border: 1px solid transparent;
+    font-size: 1.5em;
+    color: white;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    -webkit-box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.25);
+    -moz-box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.25);
+    box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.25);
+  }
+  .clear {
+    display: block;
+  }
+}
