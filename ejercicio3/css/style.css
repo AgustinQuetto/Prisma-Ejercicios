@@ -46,6 +46,14 @@ body {
   color: white;
   font-size: 1.4em;
 }
+.container .container-box table tr .bill {
+  width: 40px;
+  height: 23px;
+  background-image: url('../img/cash.png');
+  background-repeat: no-repeat;
+  background-size: 40px 23px;
+  background-position: center;
+}
 .container .container-box .input-container {
   text-align: center;
   min-width: 100%;
