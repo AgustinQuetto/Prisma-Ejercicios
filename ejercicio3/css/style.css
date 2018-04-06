@@ -15,7 +15,7 @@ body {
   text-align: center;
 }
 .container header h1 {
-  color: #90c81b;
+  color: #8bc34a;
 }
 .container .container-boxes {
   width: 90%;
@@ -68,7 +68,7 @@ body {
   outline: 0;
   border: none;
   font-size: 2em;
-  color: #90c81b;
+  color: #8bc34a;
   flex-wrap: wrap;
   margin-left: 0px;
   -webkit-box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.25);
@@ -92,6 +92,10 @@ body {
   -webkit-box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.25);
+}
+.container button:hover {
+  background: transparent;
+  background-color: #58585a;
 }
 .container .clear {
   display: block;
