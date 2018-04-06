@@ -1,3 +1,4 @@
+// buscando por medio de un vector de combinaciones posibles
 function solution (a, b) {
   function permute (b) {
     var ret = []
@@ -26,24 +27,32 @@ function solution (a, b) {
   return cantidadEncontrada
 }
 
-console.log(solution('hola, que buena ola Laomir', 'OAL'))
-
-
+// buscando por medio de la creacion de un vector con los indices pasados encontrados
 function solution2 (a, b) {
   a = a.toUpperCase()
-  b = b.join('')
-  let indexUsed = []
+  b = b.toUpperCase()
+  let counting = 0
+  let indexFound = []
   for (let indexA = 0; indexA < a.length; indexA++) {
     for (let indexB = 0; indexB < b.length; indexB++) {
       let found = false
-      for (let indexUsed = 0; indexUsed < array.length; indexUsed++) {
-        if(b[indexB] === indexUsed[indexUsed]) {
+      for (let indexUsed = 0; indexUsed < indexFound.length; indexUsed++) {
+        if (indexB === indexFound[indexUsed]) {
           found = true
+          break
         }
       }
-      if(a[indexA] === b[indexB]) {
-        indexUsed.push(indexB)
+      if (a[indexA] === b[indexB]) {
+        indexFound.push(indexB)
       }
     }
+    if (indexFound.length === b.length) {
+      counting++
+      indexFound = []
+    }
   }
+  return counting++
 }
+
+console.log('En solution: ' + solution('hola, que buena ola Laomir', 'OAL'))
+console.log('En solution2: ' + solution2('hola, que buena ola Laomir', 'OAL'))
