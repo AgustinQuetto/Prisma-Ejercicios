@@ -39,5 +39,5 @@ c.map(num => {
   m += num
 })
 
-console.log(solution(a, b, n, c, m))
-console.log(solution([1, 4, 5, 8], [4, 5, 9], n, c, m))
+console.log('Clavando clavos en solution: ' + solution(a, b, n, c, m))
+console.log('Clavando clavos en solution: ' + solution([1, 4, 5, 8], [4, 5, 9], n, c, m))

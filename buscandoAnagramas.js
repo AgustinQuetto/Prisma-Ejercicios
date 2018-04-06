@@ -35,10 +35,8 @@ function solution2 (a, b) {
   let indexFound = []
   for (let indexA = 0; indexA < a.length; indexA++) {
     for (let indexB = 0; indexB < b.length; indexB++) {
-      let found = false
       for (let indexUsed = 0; indexUsed < indexFound.length; indexUsed++) {
         if (indexB === indexFound[indexUsed]) {
-          found = true
           break
         }
       }
@@ -54,5 +52,5 @@ function solution2 (a, b) {
   return counting++
 }
 
-console.log('En solution: ' + solution('hola, que buena ola Laomir', 'OAL'))
-console.log('En solution2: ' + solution2('hola, que buena ola Laomir', 'OAL'))
+console.log('Buscando anagramas en metodo solution: ' + solution('hola, que buena ola Laomir', 'OAL'))
+console.log('BUscando anagramas en metodo solution2: ' + solution2('hola, que buena ola Laomir', 'OAL'))
